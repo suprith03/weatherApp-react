@@ -1,10 +1,11 @@
 .weatherBg{
-  background: url("https://img.freepik.com/premium-vector/hello-autumn-rainy-day-illustration_190024-306.jpg");
-  height: 65vh;
+  background: url("https://rare-gallery.com/uploads/posts/124416-miui-8-rainy-weather-background-minimal-hd.png");
+  height: 60vh;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+
 }
 .heading{
   color:white;
