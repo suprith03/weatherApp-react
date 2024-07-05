@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Weather App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+The Weather App is a React application that allows users to search for weather information by city name. It displays current weather details and a 7-day forecast using data fetched from the OpenWeatherMap API.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Search weather by city name
+- Display current weather conditions
+- Show 7-day weather forecast
+- Save favorite cities for quick access
+- Display weather alerts if available
+- Localization support for different languages
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Components Overview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### App Component
 
-### `npm test`
+- Manages state for inputCity, data, forecast, suggestions, error, favorites, language, and alerts.
+- Fetches weather data from OpenWeatherMap API.
+- Displays search input, current weather card, forecast cards, language selector, and alerts.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Autocomplete Component
 
-### `npm run build`
+- Provides autocomplete suggestions for city names based on user input.
+- Allows selecting cities for weather search.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Forecast Component
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Displays 7-day weather forecast using forecast data fetched from the API.
+- Each forecast card shows weather details for a specific day.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Alerts Component
 
-### `npm run eject`
+- Shows weather alerts if there are any for the selected city.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Screenshots
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Home Page
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![Home Page](screenshots/home.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Forecast Page
 
-## Learn More
+![Forecast Page](screenshots/forecast.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## How to Run
 
-### Code Splitting
+1. **Clone Repository:**
+   git clone https://github.com/your/"your-repo".git
+   cd repo-name
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Install Dependencies:
+npm install
 
-### Analyzing the Bundle Size
+## Set API Key:
+Create a .env file in the root directory.
+REACT_APP_API_KEY=your-api-key
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Run the Application:
+npm start
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## View the Application:
+Open http://localhost:3000 in your browser.
