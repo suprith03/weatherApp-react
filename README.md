@@ -49,7 +49,8 @@ The Weather App is a React application that allows users to search for weather i
 ## How to Run
 
 1. **Clone Repository:**
-   git clone https://github.com/your/"your-repo".git
+   git clone https://github.com/suprith03/weatherApp-react
+   <br>
    cd repo-name
 
 ## Install Dependencies:
@@ -57,6 +58,7 @@ npm install
 
 ## Set API Key:
 Create a .env file in the root directory.
+<br>
 REACT_APP_API_KEY=your-api-key
 
 ## Run the Application:
